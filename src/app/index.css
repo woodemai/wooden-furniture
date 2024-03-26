@@ -102,3 +102,17 @@
   transform: scale(0.9);
   transition: opacity 300ms, transform 300ms;
 }
+
+.product-card img {
+  @apply absolute rounded-2xl transition-all duration-500 w-[400px] h-[400px] object-cover;
+}
+.product-card:hover img {
+  @apply scale-110   translate-y-5;
+}
+.product-card .product-desc {
+  @apply cursor-default flex gap-4 p-4 shadow-2xl backdrop-blur-sm text-background flex-col z-10 opacity-0 transition-opacity duration-500 w-full relative top-0 left-0;
+}
+
+.product-card:hover .product-desc {
+  @apply bg-foreground/50 opacity-100;
+}
