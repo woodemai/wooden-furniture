@@ -18,6 +18,9 @@ const Header = memo(() => {
                 <HeaderLink to='/cnc'>
                     ЧПУ
                 </HeaderLink>
+                <HeaderLink to='/screens'>
+                    Экраны
+                </HeaderLink>
                 <HeaderLink to='/order'>
                     Заказать
                 </HeaderLink>

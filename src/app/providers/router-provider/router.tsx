@@ -6,6 +6,7 @@ import Stairs from "@/pages/stairs";
 import Cnc from "@/pages/cnc/Cnc";
 import Order from "@/pages/order";
 import Contacts from "@/pages/contacts";
+import Screens from "@/pages/screens";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         element: <Contacts />,
         path: '/contacts',
+      },
+      {
+        element: <Screens />,
+        path: '/screens',
       },
     ],
   },
