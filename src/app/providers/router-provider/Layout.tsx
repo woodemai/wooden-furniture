@@ -11,20 +11,26 @@ const Layout = () => {
     return (
         <div className="flex h-[100dvh] flex-col">
             <Header />
-            <SwitchTransition>
-                <CSSTransition
-                    key={location.pathname}
-                    timeout={300}
-                    classNames={'page'}
-                    unmountOnExit
-                >
-                    {() => (
-                        <main className="flex-grow">
-                            {outlet}
-                        </main>
-                    )}
-                </CSSTransition>
-            </SwitchTransition>
+            {location.pathname.includes('advice/') ?
+                <main className="flex-grow">
+                    {outlet}
+                </main>
+                :
+                <SwitchTransition>
+                    <CSSTransition
+                        key={location.pathname}
+                        timeout={300}
+                        classNames={'page'}
+                        unmountOnExit
+                    >
+                        {() => (
+                            <main className="flex-grow">
+                                {outlet}
+                            </main>
+                        )}
+                    </CSSTransition>
+                </SwitchTransition>
+            }
             <Footer />
         </div>
     )

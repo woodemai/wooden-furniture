@@ -1,10 +1,10 @@
 import { Navigate } from "react-router-dom";
 
-const Cnc = () => {
+const Staining = () => {
 
     return (
         <Navigate to={'/undone'} />
     )
 }
 
-export default Cnc;
+export default Staining;

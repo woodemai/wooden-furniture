@@ -1,10 +1,10 @@
 import { Navigate } from "react-router-dom";
 
-const Cnc = () => {
+const Storage = () => {
 
     return (
         <Navigate to={'/undone'} />
     )
 }
 
-export default Cnc;
+export default Storage;

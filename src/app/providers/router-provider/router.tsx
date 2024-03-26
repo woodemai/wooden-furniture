@@ -7,6 +7,15 @@ import Cnc from "@/pages/cnc/Cnc";
 import Order from "@/pages/order";
 import Contacts from "@/pages/contacts";
 import Screens from "@/pages/screens";
+import Furniture from "@/pages/furniture";
+import Undone from "@/pages/undone";
+import AdviceLayout from "@/pages/advice/Layout";
+import Care from "@/pages/advice/care";
+import Gluing from "@/pages/advice/gluing";
+import Materials from "@/pages/advice/materials";
+import Storage from "@/pages/advice/storage";
+import Varnish from "@/pages/advice/varnish";
+import Staining from "@/pages/advice/staining";
 
 export const router = createBrowserRouter([
   {
@@ -39,6 +48,44 @@ export const router = createBrowserRouter([
       {
         element: <Screens />,
         path: '/screens',
+      },
+      {
+        path: '/advice',
+        element: <AdviceLayout />,
+        children: [
+          {
+            element: <Care />,
+            path: '/advice/care'
+          },
+          {
+            element: <Gluing />,
+            path: '/advice/gluing'
+          },
+          {
+            element: <Materials />,
+            path: '/advice/materials'
+          },
+          {
+            element: <Storage />,
+            path: '/advice/storage'
+          },
+          {
+            element: <Varnish />,
+            path: '/advice/varnish'
+          },
+          {
+            element: <Staining />,
+            path: '/advice/staining'
+          },
+        ]
+      },
+      {
+        element: <Furniture />,
+        path: '/furniture',
+      },
+      {
+        element: <Undone />,
+        path: '/undone',
       },
     ],
   },

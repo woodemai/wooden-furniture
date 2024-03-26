@@ -143,7 +143,7 @@ export const mainLinks: MainLink[] = [
   },
   {
     id: 4,
-    to: "/screens",
+    to: "/furniture",
     title: "Отреставрируем, вернём первоначальный вид",
     description: "Фото внутри",
     img: IMAGES.furniture1,
@@ -151,7 +151,7 @@ export const mainLinks: MainLink[] = [
   },
   {
     id: 5,
-    to: "/screens",
+    to: "/furniture",
     title: "Эксклюзивный подарок из Вашей фантазии",
     description: "Фото внутри",
     img: IMAGES.furniture2,
@@ -159,10 +159,11 @@ export const mainLinks: MainLink[] = [
   },
   {
     id: 6,
-    to: "/screens",
+    to: "/furniture",
     title: "Изготовим любую мебель по Вашим чертежам.",
     description: "Цены внутри",
     img: IMAGES.furniture3,
     price: -1,
   },
+  
 ];

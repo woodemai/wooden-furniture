@@ -1,12 +1,13 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/shared/components/ui/card";
+import PageTemplate from "@/widgets/page/PageTemplate";
 
 
 const Order = () => {
 
     return (
-        <div className="w-full max-w-screen-lg mx-auto mt-8 flex flex-col gap-y-8">
+        <PageTemplate className="flex flex-col gap-8">
             <Card>
-                <CardHeader className="text-xl tracking-tight font-bolder">
+                <CardHeader className="text-xl tracking-tight font-bold">
                     Заказ изделия
                 </CardHeader>
                 <CardContent>
@@ -27,7 +28,7 @@ const Order = () => {
                 </CardFooter>
             </Card>
             <Card>
-                <CardHeader className="text-xl tracking-tight font-bolder">
+                <CardHeader className="text-xl tracking-tight font-bold">
                     Контактная информация
                 </CardHeader>
                 <CardContent className="flex flex-col gap-y-2">
@@ -38,7 +39,7 @@ const Order = () => {
                     <a className="text-accent" href="tel:+79204199145">+7 (920)-419-91-95</a>
                 </CardContent>
             </Card>
-        </div>
+        </PageTemplate>
     )
 }
 
