@@ -1,6 +1,7 @@
 import { useLocation, useOutlet } from "react-router-dom";
 import AdviceHeader from "./AdviceHeader";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
+import { ArrowUp } from "lucide-react";
 
 const AdviceLayout = () => {
 
@@ -9,7 +10,7 @@ const AdviceLayout = () => {
 
     return (
         <>
-            <AdviceHeader/>
+            <AdviceHeader />
             <SwitchTransition>
                 <CSSTransition
                     key={location.pathname}
@@ -19,7 +20,8 @@ const AdviceLayout = () => {
                 >
                     {() => (
                         <div>
-                            {outlet || <div className="w-full h-full mt-8 flex justify-center items-center">
+                            {outlet || <div className="w-full h-full mt-8 flex justify-center items-center flex-col gap-8">
+                                <ArrowUp size={60}/>
                                 <h1 className="text-3xl font-bold tracking-tight">Выберите категорию</h1>
                             </div>}
                         </div>
