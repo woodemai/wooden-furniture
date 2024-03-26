@@ -1,6 +1,5 @@
 import { IProduct } from "@/entities/product/IProduct";
 import ProductCard from "@/entities/product/ProductCard";
-import { Link } from "react-router-dom";
 
 interface Props {
     items: IProduct[]
