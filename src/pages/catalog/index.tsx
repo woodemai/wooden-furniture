@@ -27,11 +27,8 @@ const Catalog = () => {
     return (
         <>
             <ProductCarousel id="kitchens" items={kitchens} title="Кухни" />
-            <Separator className="bg-foreground/20"/>
             <ProductCarousel id="stairs" items={stairs} title="Лестницы" />
-            <Separator className="bg-foreground/20" />
             <ProductCarousel id="screens" items={screens} title="Экраны" />
-            <Separator className="bg-foreground/20" />
             <ProductCarousel id="furniture" items={furniture} title="Мебель" />
         </>
     )
