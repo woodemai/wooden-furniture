@@ -8,7 +8,7 @@ const Header = memo(() => {
         <header className="relative w-full min-h-16 bg-card flex justify-center items-center">
             <div className="absolute gap-4 top-0 left-0 h-full pl-4 flex justify-center items-center text-center">
                 <img width={40} height={40} src={logo} alt="logo" />
-                <h1 className=" font-bold tracking-tight text-xl">Древо-Сервис</h1>
+                <h1 className=" font-bold tracking-tight text-xl">Древо Сервис</h1>
             </div>
             <nav>
                 <HeaderLink to='/'>
