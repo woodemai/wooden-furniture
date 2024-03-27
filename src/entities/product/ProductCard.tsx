@@ -5,10 +5,11 @@ const ProductCard = ({ title, price, description, img }: IProduct) => {
 
     return (
         <div className="product-card relative flex flex-col-reverse justify-between rounded-2xl shadow-xl bg-card  w-[300px] overflow-hidden h-[300px]">
-            <img width={300} height={300} src={img} loading="lazy" alt={title ?? 'product'} />
-            <div className="z-10 p-4 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
-                {title && <h4 className="text-background text-xl tracking-tight font-bold">{title}</h4>}
+            <img width={300} height={300} src={img} alt={title ?? 'product'} />
+            {title && <div className="z-10 p-2 bg-foreground/20 backdrop-blur-sm">
+                <h5 className="text-background">{title}</h5>
             </div>
+            }
             <div className="product-desc">
                 <p className="font-semibold ">{description}</p>
                 <Separator />
