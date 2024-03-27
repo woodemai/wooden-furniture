@@ -1,10 +1,9 @@
 import { Card, CardContent, CardHeader } from "@/shared/components/ui/card";
-import PageTemplate from "@/widgets/page/PageTemplate";
 
 const Materials = () => {
 
     return (
-        <PageTemplate>
+        <>
             <Card>
                 <CardHeader className="font-bold tracking-tight text-xl">Подбор материала</CardHeader>
                 <CardContent className="flex flex-col gap-4">
@@ -37,7 +36,7 @@ const Materials = () => {
                     </p>
                 </CardContent>
             </Card>
-        </PageTemplate>
+        </>
     )
 }
 

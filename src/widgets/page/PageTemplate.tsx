@@ -3,9 +3,9 @@ import { cn } from "@/shared/lib/utils";
 const PageTemplate = (props: React.HTMLAttributes<HTMLDivElement>) => {
 
     return (
-        <div {...props} className={cn("mx-auto w-full max-w-5xl my-8", props.className)}>
+        <main {...props} className={cn("mx-auto w-full max-w-5xl py-8 flex flex-col gap-8 flex-grow", props.className)}>
             {props.children}
-        </div>
+        </main>
     )
 }
 

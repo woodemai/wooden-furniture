@@ -1,28 +1,47 @@
 import HeaderLink from "@/features/HeaderLink";
+import { useState, useEffect } from "react";
+import { CSSTransition } from "react-transition-group";
 
 const AdviceHeader = () => {
 
+    const [inProp, setInProp] = useState(false);
+
+    useEffect(() => {
+        setInProp(true)
+        return () => {
+            setInProp(false)
+        }
+    }, [])
+
     return (
-        <header className="bg-card rounded-b-3xl mx-auto w-fit shadow-lg flex gap-2 justify-center items-center">
-            <HeaderLink to='/advice/materials'>
-                Подбор материала
-            </HeaderLink>
-            <HeaderLink to='/advice/gluing'>
-                Секреты склейки
-            </HeaderLink>
-            <HeaderLink to='/advice/staining'>
-                Морение
-            </HeaderLink>
-            <HeaderLink to='/advice/varnish'>
-                Покрытие лаками
-            </HeaderLink>
-            <HeaderLink to='/advice/storage'>
-                Хранение деревянных изделий
-            </HeaderLink>
-            <HeaderLink to='/advice/care'>
-                Уход за деревянной мебелью
-            </HeaderLink>
-        </header>
+            <CSSTransition
+                timeout={500}
+                classNames={'advice-header'}
+                in={inProp}
+                unmountOnExit
+            >
+                <header className="z-[9] bg-card rounded-3xl whitespace-nowrap shadow-lg flex gap-2 justify-evenly items-center">
+                    <HeaderLink to='/advice/materials'>
+                        Подборка
+                    </HeaderLink>
+                    <HeaderLink to='/advice/gluing'>
+                        Склейка
+                    </HeaderLink>
+                    <HeaderLink to='/advice/staining'>
+                        Морение
+                    </HeaderLink>
+                    <HeaderLink to='/advice/varnish'>
+                        Лакирование
+                    </HeaderLink>
+                    <HeaderLink to='/advice/storage'>
+                        Хранение
+                    </HeaderLink>
+                    <HeaderLink to='/advice/care'>
+                        Уход
+                    </HeaderLink>
+                </header>
+            </CSSTransition>
+
     )
 }
 

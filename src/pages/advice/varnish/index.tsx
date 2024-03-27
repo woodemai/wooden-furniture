@@ -1,10 +1,9 @@
 import { Card, CardHeader, CardContent } from "@/shared/components/ui/card";
-import PageTemplate from "@/widgets/page/PageTemplate";
 
 const Varnish = () => {
 
     return (
-        <PageTemplate>
+        <>
             <Card>
                 <CardHeader className="font-bold tracking-tight text-xl">Морение</CardHeader>
                 <CardContent className="flex flex-col gap-4">
@@ -29,7 +28,7 @@ const Varnish = () => {
                     <p>Лакирование нитролаками. Слои лака наносят кистью вдоль волокон быстрыми продольными движениями в одном направлении. Покрытие выполняют 3—4 раза с выдержкой каждого слоя не менее 2ч. Кисть периодически промывают растворителем нужной марки</p>
                 </CardContent>
             </Card>
-        </PageTemplate>
+        </>
     )
 }
 

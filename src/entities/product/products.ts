@@ -117,55 +117,54 @@ export interface MainLink extends IProduct {
 }
 
 export const mainLinks: MainLink[] = [
-  {
-    id: 1,
-    to: "/stairs",
-    title: "Лестницы под заказ",
-    description: "Изготовим под Ваше помещение, подробности внутри",
-    img: IMAGES.stair2,
-    price: -1,
-  },
-  {
-    id: 2,
-    to: "/kitchens",
-    title: "Кухни на любой вкус",
-    description: "Изготовим под Ваше помещение, подробности внутри",
-    img: IMAGES.kitchen2,
-    price: -1,
-  },
-  {
-    id: 3,
-    to: "/screens",
-    title: "Экраны на батареи",
-    description: "Типы и цены внутри",
-    img: IMAGES.screen7,
-    price: -1,
-  },
-  {
-    id: 4,
-    to: "/furniture",
-    title: "Отреставрируем, вернём первоначальный вид",
-    description: "Фото внутри",
-    img: IMAGES.furniture1,
-    price: -1,
-  },
-  {
-    id: 5,
-    to: "/furniture",
-    title: "Эксклюзивный подарок из Вашей фантазии",
-    description: "Фото внутри",
-    img: IMAGES.furniture2,
-    price: -1,
-  },
-  {
-    id: 6,
-    to: "/furniture",
-    title: "Изготовим любую мебель по Вашим чертежам.",
-    description: "Цены внутри",
-    img: IMAGES.furniture3,
-    price: -1,
-  },
-
+    {
+        id: 1,
+        to: "/catalog?id=stairs",
+        title: "Лестницы под заказ",
+        description: "Изготовим под Ваше помещение, подробности внутри",
+        img: IMAGES.stair2,
+        price: -1,
+    },
+    {
+        id: 2,
+        to: "/catalog?id=kitchens",
+        title: "Кухни на любой вкус",
+        description: "Изготовим под Ваше помещение, подробности внутри",
+        img: IMAGES.kitchen2,
+        price: -1,
+    },
+    {
+        id: 3,
+        to: "/catalog?id=screens",
+        title: "Экраны на батареи",
+        description: "Типы и цены внутри",
+        img: IMAGES.screen7,
+        price: -1,
+    },
+    {
+        id: 4,
+        to: "/catalog?id=furniture",
+        title: "Отреставрируем, вернём первоначальный вид",
+        description: "Фото внутри",
+        img: IMAGES.furniture1,
+        price: -1,
+    },
+    {
+        id: 5,
+        to: "/catalog?id=furniture",
+        title: "Эксклюзивный подарок из Вашей фантазии",
+        description: "Фото внутри",
+        img: IMAGES.furniture2,
+        price: -1,
+    },
+    {
+        id: 6,
+        to: "/catalog?id=furniture",
+        title: "Изготовим любую мебель по Вашим чертежам.",
+        description: "Цены внутри",
+        img: IMAGES.furniture3,
+        price: -1,
+    },
 ];
 
 export const screens: IProduct[] = [

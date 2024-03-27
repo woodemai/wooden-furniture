@@ -1,11 +1,29 @@
-import { Card, CardContent, CardHeader } from "@/shared/components/ui/card";
-import PageTemplate from "@/widgets/page/PageTemplate";
+import { Card, CardContent, CardFooter, CardHeader } from "@/shared/components/ui/card";
 import { FlagTriangleRight, Mail, Phone } from "lucide-react";
 
 const Contacts = () => {
 
     return (
-        <PageTemplate>
+        <>
+            <Card>
+                <CardHeader className="text-xl tracking-tight font-bold">
+                    Заказ изделия
+                </CardHeader>
+                <CardContent>
+                    Заказывая изделия в фирме «Древо-Сервис» покупатель может воспользоваться бесплатной услугой: доставкой мебели до подъезда в любой район города, в удобное для него время.
+                    <ul className="flex flex-col gap-4 mt-2">
+                        <li>
+                            Консультация специалиста по любым вопросам мебельного производства не являющимися коммерческой тайной.
+                        </li>
+                        <li>
+                            Чертежи, замеры, выезд специалиста на дом.
+                        </li>
+                    </ul>
+                </CardContent>
+                <CardFooter>
+                    Хорошее настроение!
+                </CardFooter>
+            </Card>
             <Card>
                 <CardHeader className="text-xl tracking-tight font-bold">
                     Контактная информация
@@ -14,7 +32,7 @@ const Contacts = () => {
                     <div className="flex gap-2">
                         <FlagTriangleRight />
                         <h3 className="font-semibold tracking-tight">Адрес производства: </h3>
-                        <span>г. Воронеж. П. Садовый ул. Садовая 9.</span>
+                        <a className="text-accent" href="https://yandex.ru/maps/-/CDRBBQo~" target="_blank">г. Воронеж. П. Садовый ул. Садовая 9</a>
                     </div>
                     <div className="flex gap-2">
                         <Mail />
@@ -29,7 +47,7 @@ const Contacts = () => {
 
                 </CardContent>
             </Card>
-        </PageTemplate>
+        </>
     )
 }
 

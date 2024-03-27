@@ -1,10 +1,9 @@
 import { Card, CardHeader, CardContent } from "@/shared/components/ui/card";
-import PageTemplate from "@/widgets/page/PageTemplate";
 
 const Staining = () => {
 
     return (
-        <PageTemplate>
+        <>
             <Card>
                 <CardHeader className="font-bold tracking-tight text-xl">Морение</CardHeader>
                 <CardContent className="flex flex-col gap-4">
@@ -19,7 +18,7 @@ const Staining = () => {
                     <p>В результате после морения мы получаем, конечно, требуемый тон, но он не будет сплошным. Что бы такого не получалось, перед морением деревянных деталей их поверхность необходимо прогрунтовать раствором жидкого стекла на воде. После высыхания поверхность приобретает немного более старый вид и поднимается ворс. После просыхания деревянных деталей этот ворс шлифуется и уже после шлифовки обрабатывается морилкой</p>
                 </CardContent>
             </Card>
-        </PageTemplate>
+        </>
     )
 }
 

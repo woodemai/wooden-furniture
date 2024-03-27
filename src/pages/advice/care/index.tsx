@@ -1,10 +1,9 @@
 import { Card, CardHeader, CardContent } from "@/shared/components/ui/card";
-import PageTemplate from "@/widgets/page/PageTemplate";
 
 const Care = () => {
-
+    
     return (
-        <PageTemplate className="flex flex-col gap-8">
+        <>
             <Card>
                 <CardHeader className="font-bold tracking-tight text-xl">Уход за деревянной мебелью</CardHeader>
                 <CardContent className="flex flex-col gap-4">
@@ -56,7 +55,7 @@ const Care = () => {
                     <p>Устанавливать в помещении декоративные источники влаги (комнатные растения, аквариумы и мини-фонтаны), которые помогут избежать рассыхания деревянных поверхностей</p>
                 </CardContent>
             </Card>
-        </PageTemplate>
+        </>
     )
 }
 

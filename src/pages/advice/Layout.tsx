@@ -1,33 +1,36 @@
-import { useLocation, useOutlet } from "react-router-dom";
-import AdviceHeader from "./AdviceHeader";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
+import { useOutlet } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
+import { CSSTransition } from "react-transition-group";
+import { useState, useEffect } from "react";
 
 const AdviceLayout = () => {
 
     const outlet = useOutlet()
-    const location = useLocation()
+
+    const [inProp, setInProp] = useState(false);
+
+    useEffect(() => {
+        setInProp(true)
+        return () => {
+            setInProp(false)
+        }
+    }, [])
 
     return (
         <>
-            <AdviceHeader />
-            <SwitchTransition>
+            {outlet ||
                 <CSSTransition
-                    key={location.pathname}
-                    timeout={300}
-                    classNames={'page'}
+                    timeout={500}
+                    classNames={'advice-layout'}
+                    in={inProp}
                     unmountOnExit
                 >
-                    {() => (
-                        <div>
-                            {outlet || <div className="w-full h-full mt-8 flex justify-center items-center flex-col gap-8">
-                                <ArrowUp size={60}/>
-                                <h1 className="text-3xl font-bold tracking-tight">Выберите категорию</h1>
-                            </div>}
-                        </div>
-                    )}
+                    <div className="w-full h-full mt-8 flex justify-center items-center flex-col gap-8">
+                        <ArrowUp size={60} />
+                        <h1 className="text-3xl font-bold tracking-tight">Выберите категорию</h1>
+                    </div>
                 </CSSTransition>
-            </SwitchTransition>
+            }
         </>
     )
 }

@@ -1,13 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
+import { lazy } from "react";
+
 import Layout from "./Layout";
 import Home from "@/pages/home";
-import Kitchens from "@/pages/kitchens";
-import Stairs from "@/pages/stairs";
-import Cnc from "@/pages/cnc/Cnc";
-import Order from "@/pages/order";
 import Contacts from "@/pages/contacts";
-import Screens from "@/pages/screens";
-import Furniture from "@/pages/furniture";
 import Undone from "@/pages/undone";
 import AdviceLayout from "@/pages/advice/Layout";
 import Care from "@/pages/advice/care";
@@ -16,6 +12,7 @@ import Materials from "@/pages/advice/materials";
 import Storage from "@/pages/advice/storage";
 import Varnish from "@/pages/advice/varnish";
 import Staining from "@/pages/advice/staining";
+const Catalog = lazy(() => import("@/pages/catalog"))
 
 export const router = createBrowserRouter([
   {
@@ -26,29 +23,14 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        element: <Kitchens />,
-        path: '/kitchens',
-      },
-      {
-        element: <Stairs />,
-        path: '/stairs',
-      },
-      {
-        element: <Cnc />,
-        path: '/cnc',
-      },
-      {
-        element: <Order />,
-        path: '/order',
+        path: '/catalog',
+        element: <Catalog/>
       },
       {
         element: <Contacts />,
         path: '/contacts',
       },
-      {
-        element: <Screens />,
-        path: '/screens',
-      },
+
       {
         path: '/advice',
         element: <AdviceLayout />,
@@ -78,10 +60,6 @@ export const router = createBrowserRouter([
             path: '/advice/staining'
           },
         ]
-      },
-      {
-        element: <Furniture />,
-        path: '/furniture',
       },
       {
         element: <Undone />,

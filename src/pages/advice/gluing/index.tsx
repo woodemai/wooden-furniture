@@ -1,10 +1,9 @@
 import { Card, CardContent, CardHeader } from "@/shared/components/ui/card";
-import PageTemplate from "@/widgets/page/PageTemplate";
 
 const Gluing = () => {
 
     return (
-        <PageTemplate className="flex flex-col gap-8">
+        <>
             <Card>
                 <CardHeader className="font-bold tracking-tight text-xl">Секреты склейки</CardHeader>
                 <CardContent className="flex flex-col gap-4">
@@ -45,7 +44,7 @@ const Gluing = () => {
                     </ul>
                 </CardContent>
             </Card>
-        </PageTemplate>
+        </>
     )
 }
 
