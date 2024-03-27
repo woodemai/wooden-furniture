@@ -165,5 +165,90 @@ export const mainLinks: MainLink[] = [
     img: IMAGES.furniture3,
     price: -1,
   },
-  
+
 ];
+
+export const screens: IProduct[] = [
+  {
+    id: 1,
+    description: 'Экран на батарею из массива бука или дуба',
+    img: IMAGES.screen1,
+    price: 25,
+  },
+  {
+    id: 2,
+    description: 'Экраны серии «МАССИВ - КЛАССИЧЕСКИЙ»',
+    img: IMAGES.screen2,
+    price: 24,
+  },
+  {
+    id: 3,
+    description: 'Цвет и лаковое покрытие экрана не изменятся даже спустя годы',
+    img: IMAGES.screen3,
+    price: 18,
+  },
+  {
+    id: 4,
+    description: 'Покрываем водными и полиуретановыми лаками на акрилловой основе',
+    img: IMAGES.screen4,
+    price: 25,
+  },
+  {
+    id: 5,
+    description: 'Своё производство, цех с современным оборудованием',
+    img: IMAGES.screen5,
+    price: -1,
+  },
+  {
+    id: 6,
+    description: 'Лакокрасочная камера',
+    img: IMAGES.screen6,
+    price: -1,
+  },
+]
+export const furniture: IProduct[] = [
+  {
+    id: 1,
+    title: 'Отделка интерьера',
+    description: 'Дизайнер приедет в удобное для Вас время, и предложит своё видение или расмотрит Ваше предложение',
+    img: IMAGES.furniture4,
+    price: -1
+  },
+  {
+    id: 2,
+    title: 'Отделка каминов',
+    description: 'Мастер во время приезда проконсультирует по любым вопросам',
+    img: IMAGES.furniture5,
+    price: -1
+  }, {
+    id: 3,
+    title: 'Арки и бары',
+    description: 'Подберём материал, конфигурацию согласно Проекта',
+    img: IMAGES.furniture6,
+    price: -1
+  }, {
+    id: 4,
+    title: 'Массив дуба',
+    description: 'Придумаем мебель вместе',
+    img: IMAGES.furniture7,
+    price: -1
+  }, {
+    id: 5,
+    title: 'Арки и дверные проемы',
+    description: 'Декоративная отделка дверных проёмов',
+    img: IMAGES.furniture8,
+    price: -1
+  }, {
+    id: 6,
+    title: 'Спальни',
+    description: 'Изготовим мебель в спальню',
+    img: IMAGES.furniture9,
+    price: -1
+  }, {
+    id: 7,
+    title: 'Потолки',
+    description: 'Отделаем современными материалами',
+    img: IMAGES.furniture10,
+    price: -1
+  },
+]

@@ -23,4 +23,12 @@ export const IMAGES = {
   furniture1: new URL("./furniture/furniture1.webp", import.meta.url).href,
   furniture2: new URL("./furniture/furniture2.webp", import.meta.url).href,
   furniture3: new URL("./furniture/furniture3.webp", import.meta.url).href,
+  furniture4: new URL("./furniture/furniture4.jpg", import.meta.url).href,
+  furniture5: new URL("./furniture/furniture5.jpg", import.meta.url).href,
+  furniture6: new URL("./furniture/furniture6.jpg", import.meta.url).href,
+  furniture7: new URL("./furniture/furniture7.jpg", import.meta.url).href,
+  furniture8: new URL("./furniture/furniture8.jpg", import.meta.url).href,
+  furniture9: new URL("./furniture/furniture9.jpg", import.meta.url).href,
+  furniture10: new URL("./furniture/furniture10.jpg", import.meta.url).href,
+
 };
