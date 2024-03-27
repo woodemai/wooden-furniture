@@ -1,5 +1,4 @@
 import { furniture, kitchens, screens, stairs } from "@/entities/product/products";
-import { Separator } from "@/shared/components/ui/separator";
 import ProductCarousel from "@/widgets/product/ProductCarousel";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
