@@ -5,10 +5,10 @@ import { memo } from "react";
 const Header = memo(() => {
 
     return (
-        <header className="z-10 relative w-full min-h-16 bg-card flex justify-center items-center">
-            <div className="absolute gap-4 top-0 left-0 h-full pl-4 flex justify-center items-center text-center">
-                <img width={40} height={40} src={logo} alt="logo" />
-                <h1 className=" font-bold tracking-tight text-xl">Древо Сервис</h1>
+        <header className="relative z-10 w-full bg-card flex justify-center items-center p-6">
+            <div className="absolute left-0 top-0 h-full pl-4 flex justify-center items-center gap-x-4 text-center">
+                <img width={50} height={50} src={logo} alt="logo" />
+                <h2 className="uppercase">Древо Сервис</h2>
             </div>
             <nav>
                 <HeaderLink to='/'>

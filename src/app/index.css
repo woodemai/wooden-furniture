@@ -139,7 +139,17 @@
   transform: translateY(-300px);
   transition: transform 500ms;
 }
+h1 {
+  @apply font-extrabold text-5xl tracking-tight
+}
 
+h2 {
+  @apply font-bold text-4xl tracking-tight
+}
+
+h3 {
+  @apply font-bold text-3xl tracking-tight
+}
 
 .product-card img {
   @apply absolute rounded-2xl transition-all duration-500 w-[400px] h-[400px] object-cover;
