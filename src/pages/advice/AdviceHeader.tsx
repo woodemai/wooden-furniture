@@ -14,13 +14,14 @@ const AdviceHeader = () => {
     }, [])
 
     return (
-            <CSSTransition
-                timeout={500}
-                classNames={'advice-header'}
-                in={inProp}
-                unmountOnExit
-            >
-                <header className="z-[9] bg-card rounded-3xl whitespace-nowrap shadow-lg flex gap-2 justify-evenly items-center">
+        <CSSTransition
+            timeout={500}
+            classNames={'advice-header'}
+            in={inProp}
+            unmountOnExit
+        >
+            <header className="z-[9] bg-card rounded-3xl whitespace-nowrap shadow-lg p-2">
+                <nav className="sm:flex flex-wrap gap-2 text-center justify-evenly items-center">
                     <HeaderLink to='/advice/materials'>
                         Подборка
                     </HeaderLink>
@@ -39,8 +40,9 @@ const AdviceHeader = () => {
                     <HeaderLink to='/advice/care'>
                         Уход
                     </HeaderLink>
-                </header>
-            </CSSTransition>
+                </nav>
+            </header>
+        </CSSTransition>
 
     )
 }

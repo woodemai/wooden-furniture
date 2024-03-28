@@ -33,8 +33,8 @@ const ProductCarousel = ({ id, title, items }: Props) => {
                 <CarouselContent>
                     {items.map(item => <CarouselItem className="basis-[20rem]" key={item.id}><ProductCard {...item} /></CarouselItem>)}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="hidden sm:flex" />
+                <CarouselNext className="hidden sm:flex" />
             </Carousel>
         </div>
     )

@@ -1,3 +1,4 @@
+import ContactItem from "@/features/ContactItem";
 import { Card, CardContent, CardFooter, CardHeader } from "@/shared/components/ui/card";
 import { FlagTriangleRight, Mail, Phone } from "lucide-react";
 
@@ -31,22 +32,31 @@ const Contacts = () => {
                     <h4>Контактная информация</h4>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-y-4">
-                    <div className="flex gap-2">
-                        <FlagTriangleRight />
-                        <h6>Адрес производства: </h6>
-                        <a className="text-accent text-lg" href="https://yandex.ru/maps/-/CDRBBQo~" target="_blank">г. Воронеж. П. Садовый ул. Садовая 9</a>
-                    </div>
-                    <div className="flex gap-2">
-                        <Mail />
-                        <h6>Почта</h6>
-                        <a className="text-accent text-lg" href="mailto:drevo.servis@yandex.ru" target="_blank">drevo.servis@yandex.ru</a>
-                    </div>
-                    <div className="flex gap-2">
+                    <ContactItem
+                        label={<>
+                            <FlagTriangleRight />
+                            <h6>Адрес производства: </h6>
+                        </>}
+                        href="https://yandex.ru/maps/-/CDRBBQo~"
+                    >
+                        г. Воронеж. П. Садовый ул. Садовая 9
+                    </ContactItem>
+                    <ContactItem
+                        label={<>
+                            <Mail />
+                            <h6>Почта</h6>
+                        </>}
+                        href="mailto:drevo.servis@yandex.ru"
+                    >
+                        drevo.servis@yandex.ru
+                    </ContactItem>
+                    <ContactItem href="tel:+79204199145" label={<>
                         <Phone />
                         <h6>Номер телефона</h6>
-                        <a className="text-accent text-lg" href="tel:+79204199145">+7 (920)-419-91-95</a>
-                    </div>
-
+                    </>}
+                    >
+                        +7 (920)-419-91-95
+                    </ContactItem>
                 </CardContent>
             </Card>
         </>
